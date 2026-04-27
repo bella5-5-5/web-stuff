@@ -9,7 +9,8 @@
         body {
             max-width: 1000px;
             margin: auto;
-            display: grid;
+            display: grid; 
+            background: rgb(247, 0, 214); 
             grid-template-columns: 3fr 7fr;
             grid-template-rows: 300px 1fr 150px;
             gap: 0px 0px;
@@ -28,16 +29,17 @@
         article {
             grid-area: article;
             background: rgb(118, 178, 252);
+            padding: 10px; 
         }
 
         nav {
             grid-area: nav;
-            background: plum;
+            background: rgb(96, 214, 225);
         }
 
         footer {
             grid-area: footer;
-            background: rgb(249, 249, 142);
+            background: rgb(149, 226, 225);
         }
 
         .ahhh {
@@ -107,26 +109,28 @@
             font-style: normal;
         }
 
-        ul li a {
-            color: #54012fac;
+        ul {list-style-type: none;}
+        nav ul li a {
+            color: #5a8aeaac;
             text-decoration: none;
             text-align: center;
             display: block;
-            background-color: rgba(91, 8, 146, 0.593);
+            background-color: rgba(27, 7, 131, 0.696);
             width: 150px;
             height: 20px;
             margin: 10px;
-            border: 3px solid hotpink;
+            border: 3px solid rgb(49, 0, 163);
             border-radius: 30px;
-            box-shadow: 15px 20px 10px rgb(103, 7, 23);
+            box-shadow: 15px 20px 10px rgba(0, 26, 224, 0.62);
         }
 
-        ul li a:hover {
-            color: #ffbefc;
-            background-image: linear-gradient(135deg, #0E0220 0%, #000000 6px, #E40475 24.8%, #0E0220 35%, #48E0E4 56.3%, #48E0E4 62.4%, #FF00C8 72.9%, #000000DB 78.5%, #48E0E4 100%);
+        nav ul li a:hover {
+            color: #000000;
+            background-image:rgb(32, 32, 245) ;
             ;
-            box-shadow: 5px 15px 0px #d83c8a;
+            box-shadow: 5px 15px 0px #1623d4;
         }
+        footer li {display: inline;}
     </style>
 </head>
 
